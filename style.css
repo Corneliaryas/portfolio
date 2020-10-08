@@ -13,23 +13,12 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: lightblue;
-    background-image: url(./assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg);
+    background: linear-gradient(rgba(89, 149, 129, 0.637),rgba(89, 149, 129, 0.637)); /*, url(./assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg);*/
+    /* background-image: url(./assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg); */
     background-size: cover;
     background-position-y: 80%;
     min-height: 500px;
 }
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(70, 0, 9, 0.418);
-}
-
 
 header h1 {
     background-color: transparent;
@@ -83,7 +72,9 @@ header h3 span {
 h1 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    background-color: #FA382F;
+    /* background-color: #FA382F; */
+    /* background-color: rgb(179, 92, 92); */
+    background-color: rgb(89, 149, 129);
     color: white;
     font-size: 48px;
     width: fit-content;
@@ -97,9 +88,21 @@ h2 {
 
 }
 
+main h2 {
+    text-transform: uppercase;
+    /* background-color: #FA382F; */
+    /* background-color: rgb(179, 92, 92); */
+    background-color: #599581;
+    color: white;
+    font-size: 48px;
+    width: fit-content;
+    padding: 3px 10px;
+}
+
 h3 {
     font-size: 25px;
     color: #FA382F;
+    color: rgb(233, 94, 84);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -207,7 +210,8 @@ section {
 
 
 .techniques {
-    background-color: #FDDFE7;
+    /* background-color: #FDDFE7; */
+    background-color: rgb(255, 200, 200);
     font-size: 16px;
     padding: 5px 14px;
     margin-right: 3px;
@@ -215,8 +219,10 @@ section {
     font-weight: 400;
 }
 
-.projects-section h2 {
-    color: #FA382F;
+.projects-section h2:nth-of-type(2) {
+    color: #599581;
+    background-color: transparent;
+    font-size: 38px;
 
 }
 
@@ -260,7 +266,7 @@ li {
 }
 
 .more-links .some {
-    border: 2px solid #FA382F;
+    border: 2px solid #e95e54;
     margin: 25px auto;
     width: 160px;
     height: 160px;
@@ -274,6 +280,7 @@ li {
     width: 300px;
     text-align: center;
     color: #FA382F;
+    color: rgb(233, 94, 84);
     margin: 0 20px;
     font-size: 25px;
     text-transform: uppercase;
@@ -290,6 +297,7 @@ footer {
     width: 100%;
     height: 450px;
     background-color: #072BCE;
+    background-color: rgb(233, 94, 84);
     color: white;
     text-align: center;
 
@@ -302,7 +310,7 @@ footer p {
 
 /** MOBILE **/
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 575px){
 
     header {
         flex-direction: column-reverse;
@@ -311,8 +319,6 @@ footer p {
 
     header h1 {
         font-size: 40px;
-        
-
     }
 
     header h2 {
@@ -345,6 +351,14 @@ footer p {
     }
 
     h2 {
+        font-size: 22px;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    .projects-section h2:nth-of-type(2) {
         font-size: 22px;
     }
 
@@ -381,8 +395,16 @@ footer p {
         padding: 2px 7px;
     }
 
+    .skills-section div {
+        width: 100%;
+    }
+
     ul{
         font-size: 17px;
+    }
+
+    .more-links {
+        width: 90%;
     }
 
     .more-links .some {
@@ -400,4 +422,65 @@ footer p {
     .more-links img {
         transform: scale(0.75);
     }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 576px) and (max-width: 1200px){ 
+
+    header {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .links {
+        min-height: auto;
+        padding-top: 50px;
+        margin-bottom: 20px;
+        width: 100%;
+        transform: scale(0.8);
+    }
+
+    .headline {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+    header h3 {
+        font-size: 23px;
+    }
+
+    .profile-pic {
+        width: 225px;
+        height: 225px;
+        right: 10%;
+        }
+
+    .more-links {
+        width: 90%;
+    }
+
+    .more-links .some {
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .more-links a {
+        width: 200px;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .more-links img {
+        transform: scale(1);
+    }
+
 }
