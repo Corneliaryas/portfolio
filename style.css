@@ -13,12 +13,14 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: linear-gradient(rgba(89, 149, 129, 0.637),rgba(89, 149, 129, 0.637)); /*, url(./assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg);*/
+    background: linear-gradient(rgba(89, 149, 129, 0),rgba(42, 86, 84, 0.5)), url(./assets/Header_v03.png);
     /* background-image: url(./assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg); */
     background-size: cover;
     background-position-y: 80%;
     min-height: 500px;
+
 }
+
 
 header h1 {
     background-color: transparent;
@@ -92,7 +94,7 @@ main h2 {
     text-transform: uppercase;
     /* background-color: #FA382F; */
     /* background-color: rgb(179, 92, 92); */
-    background-color: #599581;
+    background-color: #3F8C7B;;
     color: white;
     font-size: 48px;
     width: fit-content;
@@ -117,6 +119,11 @@ a {
     text-decoration: none;
     font-weight: bold;
    
+}
+
+.highlight {
+    color: #e95e54;
+    font-weight: 700;
 }
 
 .some {
@@ -154,6 +161,7 @@ section {
 .summary-section {
     font-family: 'Montserrat', sans-serif;
     background-color: #F4F4F4;
+    background-color: #F5F3F1;
     
 }
 
@@ -184,7 +192,7 @@ section {
 .line {
     width: 80px;
     height: 5px;
-    background-color: tomato;
+    background-color: #e95e54;;
     border-radius: 5px;
 }
 
@@ -192,7 +200,7 @@ section {
     width: 20px;
     height: 20px;
     margin-left: -2px;
-    background-color: tomato;
+    background-color: #e95e54;;
     border-radius: 50%;
 }
 
@@ -203,7 +211,7 @@ section {
 }
 
 .projects-section {
-    background-color: #F4F4F4;
+    background-color: #F5F3F1;
 }
 
 .featured-projects {
@@ -252,11 +260,11 @@ section {
 
 .techniques {
     /* background-color: #FDDFE7; */
-    background-color: rgb(255, 200, 200);
+    background-color: #2A5655;
     font-size: 16px;
     padding: 5px 14px;
     margin-right: 3px;
-    color: black;
+    color: white;
     font-weight: 400;
 }
 
@@ -274,7 +282,7 @@ section {
 /* SKILLS */
 
 .skills-section {
-    background-color: #F4F4F4;
+    background-color: #F5F3F1;
 }
 
 .skills-section div {
@@ -321,7 +329,7 @@ li {
     width: 300px;
     text-align: center;
     color: #FA382F;
-    color: rgb(233, 94, 84);
+    color: #e95e54;
     margin: 0 20px;
     font-size: 25px;
     text-transform: uppercase;
@@ -339,6 +347,7 @@ footer {
     height: 450px;
     background-color: #072BCE;
     background-color: rgb(233, 94, 84);
+    background-color: #2A5655;
     color: white;
     text-align: center;
 
@@ -555,3 +564,17 @@ footer p {
     }
 
 }
+
+/* Color Theme Swatches in Hex */
+.Light-Green-1-hex { color: #2A5655; }
+.Light-Green-2-hex { color: #3F8C7B; }
+.Light-Green-3-hex { color: #C0D8C5; }
+.Light-Green-4-hex { color: #F0EAD9; }
+.Light-Green-5-hex { color: #F5F3F1; }
+
+/* Color Theme Swatches in RGBA */
+.Light-Green-1-rgba { color: rgba(42, 86, 84, 1); }
+.Light-Green-2-rgba { color: rgba(63, 140, 123, 1); }
+.Light-Green-3-rgba { color: rgba(191, 216, 196, 1); }
+.Light-Green-4-rgba { color: rgba(239, 233, 216, 1); }
+.Light-Green-5-rgba { color: rgba(244, 242, 240, 1); }
