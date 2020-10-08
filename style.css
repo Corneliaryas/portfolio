@@ -105,6 +105,7 @@ h3 {
     color: rgb(233, 94, 84);
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 p {
@@ -160,6 +161,7 @@ section {
     display: block;
     padding: 0;
     width: 60%;
+    margin: 50px 0;
 }
 
 .summary-container p {
@@ -183,6 +185,7 @@ section {
     width: 80px;
     height: 5px;
     background-color: tomato;
+    border-radius: 5px;
 }
 
 .circle {
@@ -372,15 +375,25 @@ footer p {
     }
 
     .profile-pic {
-    width: 160px;
-    height: 160px;
+        width: 160px;
+        height: 160px;
+        right: 5%;
     }
 
     .links {
         min-height: auto;
         padding-top: 50px;
         margin-bottom: 20px;
-        width: 100%;
+        width: 90%;
+        /* transform: scale(0.6); */
+    }
+
+    .some {
+        width: 50px;
+        height: 50px;
+    }
+
+    .some img {
         transform: scale(0.6);
     }
 
@@ -414,6 +427,26 @@ footer p {
         padding: 20px 0;
     }
 
+    .summary-container {
+        width: 80%;
+    }
+
+    .summary-symbol {
+        shape-outside: inset(0px 0px 0px 0px);
+        width: 50px;
+        height: 17px;
+    }
+
+    .circle {
+        width: 12px;
+        height: 12px;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+    }
+
     .project {
         width: 303px;
     }
@@ -434,11 +467,11 @@ footer p {
     }
 
     .skills-section div {
-        width: 100%;
+        width: 90%;
     }
 
     ul{
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .more-links {
