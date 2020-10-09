@@ -7,6 +7,47 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    /* background-color: #FA382F; */
+    /* background-color: rgb(179, 92, 92); */
+    background-color: rgb(89, 149, 129);
+    color: white;
+    font-size: 48px;
+    width: fit-content;
+    padding: 3px 10px;
+}
+
+h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h3 {
+    font-size: 25px;
+    color: #FA382F;
+    color: rgb(233, 94, 84);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 30px;
+    width: 60%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+/*** HEADER ***/
+
 header {
     position: relative;
     display: flex;
@@ -14,11 +55,9 @@ header {
     justify-content: center;
     width: 100%;
     background: linear-gradient(rgba(89, 149, 129, 0),rgba(42, 86, 84, 0.5)), url(./assets/Header_v03.png);
-    /* background-image: url(./assets/jesus-kiteque-wn-KYaHwcis-unsplash.jpg); */
     background-size: cover;
     background-position-y: 80%;
     min-height: 500px;
-
 }
 
 
@@ -53,6 +92,7 @@ header h3 span {
     width: 30%;
     z-index: 1;
 }
+
 .links {
     display: inline-flex;
     justify-content: flex-end;
@@ -60,70 +100,6 @@ header h3 span {
     min-height: 500px;
     padding-top: 75px;
     z-index: 1;
-}
-.profile-pic {
-    border-radius: 50%;
-    position: absolute;
-    right: 18%;
-    bottom: -40px;
-    width: 333px;
-    height: 333px;
-    border: 5px solid white;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    /* background-color: #FA382F; */
-    /* background-color: rgb(179, 92, 92); */
-    background-color: rgb(89, 149, 129);
-    color: white;
-    font-size: 48px;
-    width: fit-content;
-    padding: 3px 10px;
-}
-
-h2 {
-    font-size: 38px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-main h2 {
-    text-transform: uppercase;
-    /* background-color: #FA382F; */
-    /* background-color: rgb(179, 92, 92); */
-    background-color: #3F8C7B;;
-    color: white;
-    font-size: 48px;
-    width: fit-content;
-    padding: 3px 10px;
-}
-
-h3 {
-    font-size: 25px;
-    color: #FA382F;
-    color: rgb(233, 94, 84);
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 30px;
-    width: 60%;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-   
-}
-
-.highlight {
-    color: #e95e54;
-    font-weight: 700;
 }
 
 .some {
@@ -136,6 +112,29 @@ a {
     border: 3px solid white;
     border-radius: 50%;
     margin: 6px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    position: absolute;
+    right: 18%;
+    bottom: -40px;
+    width: 333px;
+    height: 333px;
+    border: 5px solid white;
+}
+
+/*** MAIN SECTION **/
+
+main h2 {
+    text-transform: uppercase;
+    /* background-color: #FA382F; */
+    /* background-color: rgb(179, 92, 92); */
+    background-color: #3F8C7B;;
+    color: white;
+    font-size: 48px;
+    width: fit-content;
+    padding: 3px 10px;
 }
 
 
@@ -158,6 +157,9 @@ section {
     padding: 50px;
 
 }
+
+/** SUMMARY **/
+
 .summary-section {
     font-family: 'Montserrat', sans-serif;
     background-color: #F4F4F4;
@@ -204,11 +206,19 @@ section {
     border-radius: 50%;
 }
 
+/** TECH **/
+
+.highlight {
+    color: #e95e54;
+    font-weight: 700;
+}
 
 .tech-section p {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
+
+/** PROJECTS **/
 
 .projects-section {
     background-color: #F5F3F1;
@@ -225,8 +235,6 @@ section {
 .project {
     margin: 30px 0;
     width: 522px;
-    /* background-color: red; */
-    
 }
 
 .project-img {
@@ -235,9 +243,7 @@ section {
     height: 309px;
     background-image: url(./assets/Weather.png);
     background-color: #8d1031;
-    /* filter: brightness(1); */
     mix-blend-mode: darken;
-
 }
 
 .project-img:before {
@@ -279,7 +285,7 @@ section {
     width: 60%;
 }
 
-/* SKILLS */
+/** SKILLS **/
 
 .skills-section {
     background-color: #F5F3F1;
@@ -305,7 +311,7 @@ li {
 
 }
 
-/* MORE */
+/** MORE **/
 
 .more-links {
     display: inline-flex;
@@ -336,7 +342,7 @@ li {
 }
 
 
-/* FOOTER */ 
+/** FOOTER **/ 
 
 footer {
     display: flex;
@@ -362,9 +368,29 @@ footer p {
 
 @media only screen and (max-width: 575px){
 
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 17px;
+        width: 80%;
+    }
+
+    /* Header */
+
     header {
         flex-direction: column-reverse;
         justify-content: flex-end;
+        background: linear-gradient(rgba(89, 149, 129, 0),rgba(42, 86, 84, 0.5)), url(./assets/Header_Mobile_v01.png);
     }
 
     header h1 {
@@ -394,7 +420,6 @@ footer p {
         padding-top: 50px;
         margin-bottom: 20px;
         width: 90%;
-        /* transform: scale(0.6); */
     }
 
     .some {
@@ -406,35 +431,18 @@ footer p {
         transform: scale(0.6);
     }
 
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
+    /* Main */
 
     main h2 {
         font-size: 22px;
-    }
-
-    .projects-section h2:nth-of-type(2) {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 17px;
-    }
-
-    p {
-        font-size: 17px;
-        width: 80%;
     }
 
     section {
         min-height: 200px;
         padding: 20px 0;
     }
+
+    /* Summary */
 
     .summary-container {
         width: 80%;
@@ -456,8 +464,18 @@ footer p {
         height: 3px;
     }
 
+    /* Projects*/ 
+
     .project {
         width: 303px;
+    }
+
+    .projects-section h2:nth-of-type(2) {
+        font-size: 22px;
+    }
+
+    .project p {
+        font-size: 17px;
     }
 
     .project img {
@@ -466,14 +484,12 @@ footer p {
         object-fit: cover;
     }
 
-    .project p {
-        font-size: 17px;
-    }
-
     .techniques {
         font-size: 9px;
         padding: 2px 7px;
     }
+
+    /* Skills */
 
     .skills-section div {
         width: 90%;
@@ -482,6 +498,8 @@ footer p {
     ul{
         font-size: 15px;
     }
+
+    /* More */
 
     .more-links {
         width: 90%;
@@ -504,13 +522,16 @@ footer p {
     }
 }
 
-/* TABLET */
+/** TABLET **/
 
 @media screen and (min-width: 576px) and (max-width: 1200px){ 
+
+    /* Header */
 
     header {
         flex-direction: column-reverse;
         justify-content: flex-end;
+        background: linear-gradient(rgba(89, 149, 129, 0),rgba(42, 86, 84, 0.5)), url(./assets/Header_Tablet_v01.png);
     }
 
     .links {
@@ -541,7 +562,9 @@ footer p {
         width: 225px;
         height: 225px;
         right: 10%;
-        }
+    }
+
+    /* More */
 
     .more-links {
         width: 90%;
@@ -550,7 +573,6 @@ footer p {
     .more-links .some {
         width: 100px;
         height: 100px;
-        
     }
 
     .more-links a {
