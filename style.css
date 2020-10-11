@@ -9,26 +9,25 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: fit-content;
+    font-size: 82px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    /* background-color: #FA382F; */
-    /* background-color: rgb(179, 92, 92); */
-    background-color: rgb(89, 149, 129);
+    background-color: #2A5655;
     color: white;
     font-size: 48px;
     width: fit-content;
     padding: 3px 10px;
 }
 
-h2 {
-    font-size: 38px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
 h3 {
     font-size: 25px;
-    color: #FA382F;
     color: rgb(233, 94, 84);
     font-weight: 700;
     text-transform: uppercase;
@@ -60,21 +59,12 @@ header {
     min-height: 500px;
 }
 
-
-header h1 {
-    background-color: transparent;
-    text-transform: none;
-    font-size: 82px;
-    margin: 0;
-    padding: 0;
-}
-
 header h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
     font-size: 50px;
     margin: 0;
+    padding: 0;
     text-transform: none;
+    background: none;
 }
 
 header h3 {
@@ -126,18 +116,6 @@ header h3 span {
 
 /*** MAIN SECTION **/
 
-main h2 {
-    text-transform: uppercase;
-    /* background-color: #FA382F; */
-    /* background-color: rgb(179, 92, 92); */
-    background-color: #3F8C7B;;
-    color: white;
-    font-size: 48px;
-    width: fit-content;
-    padding: 3px 10px;
-}
-
-
 main {
     display: flex;
     flex-direction: column;
@@ -154,6 +132,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 450px;
+    box-sizing: border-box;
     padding: 50px;
 
 }
@@ -162,9 +141,7 @@ section {
 
 .summary-section {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F4F4F4;
     background-color: #F5F3F1;
-    
 }
 
 .summary-container {
@@ -237,23 +214,52 @@ section {
     width: 522px;
 }
 
-.project-img {
-    position: relative;
+.tint {
+    margin: 0;
+    padding: 0;
     width: 522px;
     height: 309px;
-    background-image: url(./assets/Weather.png);
-    background-color: #8d1031;
-    mix-blend-mode: darken;
+    position: relative;
 }
 
-.project-img:before {
+.tint h3 {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+
+}
+
+.tint:before {
     content: "";
     position: absolute;
+    display: block;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(59, 1, 124, 0.144);
+    background-color:  rgba(233, 94, 84, 0.8);
+    background: linear-gradient(45deg, rgba(233, 94, 84, 0.9),rgba(233, 94, 84, 0.7));
+    opacity: 1;
+    transition: opacity 0.5s ease;
+
+} 
+
+.tint:hover:before {
+    opacity: 0;
+
+
+}
+
+.tint:hover h3 {
+    opacity: 0;
 }
 
 .project p {
@@ -265,7 +271,6 @@ section {
 
 
 .techniques {
-    /* background-color: #FDDFE7; */
     background-color: #2A5655;
     font-size: 16px;
     padding: 5px 14px;
@@ -275,7 +280,7 @@ section {
 }
 
 .projects-section h2:nth-of-type(2) {
-    color: #599581;
+    color: #2A5655;
     background-color: transparent;
     font-size: 38px;
 
@@ -305,10 +310,6 @@ ul {
     padding: 0;
     text-align: center;
     font-size: 25px;
-}
-
-li {
-
 }
 
 /** MORE **/
@@ -359,6 +360,13 @@ footer {
 
 }
 
+footer h2 {
+    background: none;
+    font-size: 38px;
+
+
+}
+
 footer p {
     width: 100%;
     margin: 6px;
@@ -369,7 +377,7 @@ footer p {
 @media only screen and (max-width: 575px){
 
     h1 {
-        font-size: 22px;
+        font-size: 40px;
     }
 
     h2 {
@@ -391,10 +399,6 @@ footer p {
         flex-direction: column-reverse;
         justify-content: flex-end;
         background: linear-gradient(rgba(89, 149, 129, 0),rgba(42, 86, 84, 0.5)), url(./assets/Header_Mobile_v01.png);
-    }
-
-    header h1 {
-        font-size: 40px;
     }
 
     header h2 {
@@ -433,10 +437,6 @@ footer p {
 
     /* Main */
 
-    main h2 {
-        font-size: 22px;
-    }
-
     section {
         min-height: 200px;
         padding: 20px 0;
@@ -464,7 +464,7 @@ footer p {
         height: 3px;
     }
 
-    /* Projects*/ 
+    /* Projects */ 
 
     .project {
         width: 303px;
@@ -482,6 +482,12 @@ footer p {
         width: 303px;
         height: 179px;
         object-fit: cover;
+    }
+
+    .tint {
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
 
     .techniques {
@@ -520,6 +526,10 @@ footer p {
     .more-links img {
         transform: scale(0.75);
     }
+
+    footer h2 {
+        font-size: 22px;
+    }
 }
 
 /** TABLET **/
@@ -546,7 +556,7 @@ footer p {
         width: 90%;
     }
 
-    header h1 {
+    h1 {
         font-size: 60px;
     }
 
@@ -588,6 +598,7 @@ footer p {
 }
 
 /* Color Theme Swatches in Hex */
+.red {color: #e95e54; }
 .Light-Green-1-hex { color: #2A5655; }
 .Light-Green-2-hex { color: #3F8C7B; }
 .Light-Green-3-hex { color: #C0D8C5; }
