@@ -32,6 +32,7 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
+    line-height: 35px;
 }
 
 p {
@@ -249,7 +250,6 @@ section {
     opacity: 1;
     z-index: 1;
     transition: opacity 0.3s ease;
-
 }
 
 .tint:before {
@@ -262,29 +262,34 @@ section {
     left: 0;
     background-color:  rgba(233, 94, 84, 0.8);
     background: linear-gradient(45deg, rgba(233, 94, 84, 0.7),rgba(233, 94, 84, 0.5));
+    background: linear-gradient(45deg, rgba(121, 45, 45, 0.5),rgba(143, 52, 52, 0.3));
     opacity: 1;
     transition: opacity 0.5s ease;
     border-radius: 8px;
-
 } 
 
 .tint:hover:before {
     opacity: 0;
-
-
 }
 
 .tint:hover h3 {
     opacity: 0;
 }
 
-.project p {
+.featured-projects p {
     font-size: 25px;
     width: 100%;
     font-weight: 400;
     color: black;
 }
 
+.project-description {
+    font-size: 25px;
+    width: 100%;
+    font-weight: 400;
+    color: black;
+    text-transform: none;
+}
 
 .techniques {
     background-color: #2A5655;
@@ -295,11 +300,29 @@ section {
     font-weight: 400;
 }
 
+.tech-used {
+    margin-top: 20px;
+}
+
+.other-projects .project-description {
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+
+.other-projects h3 {
+    text-decoration: underline;
+    text-decoration-color: #e95e54;
+}
+
+.other-projects a:visited {
+    text-decoration-color: #000;
+}
+
+
 .projects-section h2:nth-of-type(2) {
     color: #2A5655;
     background-color: transparent;
     font-size: 38px;
-
 }
 
 .other-projects {
