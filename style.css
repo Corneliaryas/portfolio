@@ -42,9 +42,20 @@ p {
 a {
     text-decoration: none;
     font-weight: bold;
-   
 }
 
+.text-link {
+    text-decoration: underline;
+    text-decoration-color: #e95e54;
+    font-weight: 400;
+}
+
+.text-link:visited {
+    color: black;
+}
+.text-link:hover {
+    color: #e95e54;
+}
 /*** HEADER ***/
 
 header {
@@ -222,6 +233,10 @@ section {
     position: relative;
 }
 
+.tint img {
+    border-radius: 8px;
+}
+
 .tint h3 {
     position: absolute;
     display: block;
@@ -246,9 +261,10 @@ section {
     bottom: 0;
     left: 0;
     background-color:  rgba(233, 94, 84, 0.8);
-    background: linear-gradient(45deg, rgba(233, 94, 84, 0.9),rgba(233, 94, 84, 0.7));
+    background: linear-gradient(45deg, rgba(233, 94, 84, 0.7),rgba(233, 94, 84, 0.5));
     opacity: 1;
     transition: opacity 0.5s ease;
+    border-radius: 8px;
 
 } 
 
@@ -298,6 +314,7 @@ section {
 
 .skills-section div {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: space-between;
     justify-content: space-between;
