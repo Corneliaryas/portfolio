@@ -67,7 +67,7 @@ header {
     justify-content: center;
     width: 100%;
     background-color: #3F8C7B;
-    background: linear-gradient(rgba(89, 149, 129, 0),rgba(42, 86, 84, 0.5)), url(./assets/Header_v03.png);
+    background-image: linear-gradient(rgba(89, 149, 129, 0),rgba(42, 86, 84, 0.5)), url(./assets/Header_v03.png);
     background-size: cover;
     background-position-y: 80%;
     min-height: 500px;
