@@ -220,6 +220,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 70%;
+    max-width: 1550px;
     margin-bottom: 50px;
 }
 
