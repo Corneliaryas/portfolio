@@ -385,6 +385,45 @@ ul {
     text-transform: uppercase;
 }
 
+.thought {
+    width: 513px;
+}
+
+.thought p {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(0,0,0);
+    width: 100%;
+    margin: 5px 0;
+}
+
+.thought h4 {
+    font-size: 25px;
+    color: rgb(233, 94, 84);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 5px 0;
+    line-height: 35px;
+}
+
+.thought h3 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-transform: none;
+    margin: 5px 0;
+    line-height: 35px;
+}
+
+.thought img {
+    width: 100%;
+}
+
+.arrows {
+    color: rgb(233, 94, 84);
+    font-weight: 700;
+}
+
 
 /** FOOTER **/ 
 
@@ -551,6 +590,22 @@ footer p {
 
     ul{
         font-size: 15px;
+    }
+
+    /* Thoughts */
+
+    .thought {
+        width: 80%;
+    }
+
+    .thought p, .thought h4 {
+        font-size: 17px;
+    }
+
+    .thought h3 {
+        font-size: 22px;
+        line-height: 22px;
+
     }
 
     /* More */
