@@ -385,8 +385,14 @@ ul {
     text-transform: uppercase;
 }
 
+.thoughts {
+    display: flex;
+    flex-direction: row;
+}
+
 .thought {
     width: 513px;
+    margin: 10px;
 }
 
 .thought p {
@@ -593,6 +599,10 @@ footer p {
     }
 
     /* Thoughts */
+    .thoughts {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .thought {
         width: 80%;
@@ -691,6 +701,11 @@ footer p {
 
     .skills-section div {
         width: 80%;
+    }
+
+    .thoughts {
+        flex-direction: column;
+        align-items: center;
     }
 
     /* More */
